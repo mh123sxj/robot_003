@@ -1,0 +1,25 @@
+引脚,外设配置,接到,代码模块,备注
+PA0,TIM2_CH1 PWM 20kHz,左BTS RPWM,motor.c,
+PA1,TIM2_CH2 PWM 20kHz,左BTS LPWM,motor.c,
+PA2,TIM2_CH3 PWM 20kHz,右BTS RPWM,motor.c,
+PA3,TIM2_CH4 PWM 20kHz,右BTS LPWM,motor.c,
+PB1,GPIO 输出,左BTS R_EN+L_EN,motor.c,高=使能
+PB9,GPIO 输出,右BTS R_EN+L_EN,motor.c,高=使能
+PA6,TIM3_CH1 50Hz,肩 DS3218,servo.c,900-2100us
+PA7,TIM3_CH2 50Hz,肘 DS3218,servo.c,900-2100us
+PB0,TIM3_CH3 50Hz,夹爪 SG90,gripper.c,1700/1150us
+PA10,EXTI10 双沿,左编码器 A,encoder.c,上拉
+PA11,EXTI11 双沿,左编码器 B,encoder.c,上拉
+PB4,EXTI4 双沿,右编码器 A,encoder.c,上拉
+PB5,EXTI5 双沿,右编码器 B,encoder.c,上拉
+PB11,USART3_RX 115200,iA10B i-BUS,rc.c,实测经SERVO口
+PB10,USART3_TX 115200,调试串口,debug.c,非阻塞
+PA9,USART1_TX 115200（ioc 已配）,调试串口备用,debug.c,非阻塞
+PA5,ADC1_IN5 239.5周期,电池分压中点,battery.c,1:6
+PC13,GPIO 输出,板载LED,app.c,低电平亮
+PB8,已释放,,,蜂鸣器不装
+PB12,已释放,,,原步进DIR
+PB13,已释放,,,原步进EN
+PB6/PB7,未用,,,备选：TIM4硬件编码器
+PA13/PA14,Serial Wire,SWD烧录,-,
+PA15/PB3,未用,,,保留

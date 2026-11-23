@@ -1,0 +1,18 @@
+# 构建产物
+build/
+*.elf
+*.hex
+*.bin
+*.map
+
+# IDE / 工具
+.idea/
+.vscode/
+.dsh-stm32/
+*.ioc.bak
+*.bak
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store
